@@ -60,7 +60,7 @@ import Kasol from "./Pages/India/Himachal/Kasol";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Travel-to-heaven/">
         <ScrollToTop />
         <NavBar />
         <Routes>
