@@ -1,0 +1,157 @@
+.BaliIntro {
+  padding: 20px 40px;
+}
+.BaliIntro > p {
+  color: black;
+  font-size: 1.1rem;
+}
+.article-content p {
+  font-size: 1rem;
+  color: #7c7c8b;
+}
+.BaliIntro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.BaliIntro h1::after {
+  content: "";
+  padding: 2px;
+  width: 10%;
+  display: flex;
+  background-color: #32b67a;
+}
+
+.BaliInfo {
+  margin-top: 30px;
+}
+
+.BaliInfo p {
+  color: #7c7c8b;
+}
+
+.friAndFam {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.friAndFam h2 {
+  background-color: #f4f4f4;
+  display: inline-block;
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding: 0 30px;
+  font-weight: 500;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.friAndFam::after,
+.friAndFam::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+
+.friAndFam::after {
+  content: "";
+  top: 45%;
+}
+
+.friAndFam::before {
+  content: "";
+  top: 55%;
+}
+
+.BaliCardsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .BaliIntro {
+    padding: 15px 30px;
+  }
+
+  .BaliIntro h1 {
+    font-size: 2.2rem;
+  }
+
+  .friAndFam {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .BaliIntro {
+    padding: 10px 20px;
+  }
+
+  .BaliIntro h1 {
+    font-size: 2rem;
+  }
+
+  .friAndFam {
+    font-size: 32px;
+  }
+
+  .BaliCardsContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .BaliIntro h1 {
+    font-size: 1.8rem;
+  }
+
+  .friAndFam {
+    font-size: 28px;
+  }
+
+  .friAndFam h2 {
+    padding: 0 20px;
+  }
+
+  .BaliCardsContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .BaliIntro {
+    padding: 10px;
+  }
+
+  .BaliIntro h1 {
+    font-size: 1.5rem;
+  }
+
+  .BaliIntro h1::after {
+    width: 15%;
+  }
+
+  .friAndFam {
+    font-size: 24px;
+  }
+
+  .friAndFam h2 {
+    padding: 0 15px;
+  }
+}

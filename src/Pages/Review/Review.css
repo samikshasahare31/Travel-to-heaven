@@ -1,0 +1,178 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  border: 0%;
+}
+
+/* Reviews page container */
+.reviews-page {
+  max-width: 1800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Feedback banner */
+.feedback-banner img {
+  width: 55%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+/* Rating summary */
+.rating-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.average-rating h3 {
+  font-size: 1.5em;
+  color: #f39c12;
+}
+
+.average-rating p {
+  font-size: 1em;
+  color: #555;
+}
+
+.rating-distribution {
+  width: 50%;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating-bar span {
+  width: 80px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.bar {
+  flex: 1;
+  height: 10px;
+  background-color: #ddd;
+  margin: 0 10px;
+  position: relative;
+}
+
+.fill {
+  height: 100%;
+  background-color: #f39c12;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 2px #111111;
+}
+
+/* Submitted reviews */
+.submitted-reviews h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #353936;
+}
+
+.review {
+  padding: 10px 0;
+}
+
+.review:last-child {
+  border-bottom: none;
+}
+
+.review h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #111111;
+}
+
+.review p {
+  font-size: 1em;
+  color: #212020;
+}
+
+.review p strong {
+  color: #43494b;
+  font-size: small;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .reviews-page {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .feedback-banner img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .rating-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rating-distribution {
+    width: 100%;
+  }
+
+  .rating-bar span {
+    width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .average-rating h3 {
+    font-size: 1.2em;
+  }
+
+  .average-rating p {
+    font-size: 0.9em;
+  }
+
+  .submitted-reviews h2 {
+    font-size: 1.5em;
+  }
+
+  .review h3 {
+    font-size: 1em;
+  }
+
+  .review p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .rating-bar span {
+    width: 50px;
+    font-size: 0.8em;
+  }
+
+  .bar {
+    margin: 0 5px;
+  }
+
+  .submitted-reviews h2 {
+    font-size: 1.2em;
+  }
+
+  .review h3 {
+    font-size: 0.9em;
+  }
+
+  .review p {
+    font-size: 0.8em;
+  }
+}

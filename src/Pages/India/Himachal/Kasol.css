@@ -1,0 +1,168 @@
+/* Base Styles */
+.kasol-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.kasol-container h1 {
+  font-size: 2.5rem;
+  margin: 2rem;
+  margin-left: 1rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.kasol-container h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40%;
+  height: 3px;
+  background-color: #32b67a;
+}
+
+.kasol-destination {
+  margin: 1rem;
+}
+
+.kasol-cards {
+  display: flex;
+  justify-content: start; 
+  margin-left: 2%;
+  width: 100%;
+  
+}
+
+.kasol-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.kasol-card:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 30px 60px 20px rgba(0, 0, 0, 0.7); 
+  transform: translateY(-10px) scale(1.05); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.kasol-hiking {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+.kasol-hiking h2 {
+  background: #f7f6f6;
+  display: inline-block;
+  position: relative;
+  padding: 0 30px;
+  font-weight: 400;
+  font-size: 1em;
+  z-index: 1;
+}
+.kasol-hiking::after,
+.kasol-hiking::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+.kasol-hiking::after {
+  content: "";
+  top: 45%;
+}
+.kasol-hiking::before {
+  content: "";
+  top: 55%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .kasol-container h1 {
+    font-size: 2rem;
+    margin: 1.5rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .kasol-container h1 {
+    font-size: 1.8rem;
+    margin: 1rem;
+  }
+
+  .kasol-card {
+    width: 100%;
+  }
+
+  .kasol-hiking h2{
+      font-size: 0.8em;
+  }
+  
+  .kasol-cards{
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+  }
+
+  .kasol-card:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 30px 60px 20px rgba(0, 0, 0, 0.7); 
+    transform: translateY(-10px) scale(1.05); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+  .price-section {
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .card-details p {
+    font-size: 0.8rem;
+  }
+
+  .view-details-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .kasol-container {
+    padding: 10px;
+  }
+
+  .kasol-container h1 {
+    font-size: 1.8rem;
+    margin: 1rem;
+    margin-left: 1.5rem;
+  }
+ 
+  .price-section {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    margin: 10px;
+  }
+
+  .card-details {
+    margin: 10px;
+  }
+}

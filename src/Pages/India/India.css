@@ -1,0 +1,176 @@
+.carousel-inner img {
+    width: 100%;
+    height: 400px; /* Adjust the height to your preference */
+    object-fit: cover; /* Ensures the image covers the given space */
+  }
+
+
+  .india-destination {
+    margin: 1rem;
+    font-size: 1em;
+}
+
+.indiaMain h1 {
+    font-size: 2.5rem;
+    margin: 2rem;
+    margin-left: 1rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.indiaMain h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40%;
+    height: 3px;
+    background-color: #32b67a;
+}
+  .india-description p {
+    text-align: justify;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  .india-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+  }
+  .tour-image {
+    width: 424px;
+    height: 416px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .india-image-container:hover .tour-image {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .india-image-container {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .button-view {
+    display: flex;
+    border: 1px solid;
+    border-radius: 4px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-view:hover{
+    background-color: white;
+    color: #32b67a;
+  }
+  .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    background-color: transparent;
+    width: 100% !important;
+    height: 416px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease, background-color 0.5s ease;
+  }
+  .india-image-container:hover .caption {
+    opacity: 1;
+    background-color: rgba(50, 182, 122, 0.8);
+    transform: scale(1);
+  }
+  .tour-image:hover {
+    transition: all 1s ease;
+  }
+  .india-card-title {
+    margin-top: 5%;
+    margin-bottom: 8%;
+  }
+  
+  .india-card-body {
+    font-size: 22px;
+    font-weight: 600;
+    color: #666666;
+  }
+  .india-card-title:hover {
+    cursor: pointer;
+    color: #32b67a;
+  }
+  
+  @media screen and (max-width: 1100px) and (min-width: 1000px) {
+    .tour-image {
+      height: 294px;
+    }
+    .caption {
+      height: 295px;
+    }
+  }
+  @media screen and (max-width: 1198px) and (min-width: 1150px) {
+    .tour-image {
+      height: 359px;
+    }
+    .caption {
+      height: 361px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .india-main-container {
+      padding: 42px;
+    }
+  
+    .india-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .india-main-container {
+      padding: 4%;
+    }
+  
+    .india-container {
+      justify-content: center;
+      grid-template-columns: 1fr;
+    }
+    .tour-image {
+      width: 705px;
+      height: 637px;
+    }
+    .caption {
+      height: 637px;
+      width: 713px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .tour-image {
+      height: 300px;
+    }
+    .caption {
+      height: 301px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .caption {
+      height: 302px;
+    }
+  
+    .tour-image {
+      height: 300px;
+    }
+  }
+  @media screen (min-width: 1500px) {
+    .caption {
+      width: 96% !important;
+    }
+  }
+  
+  

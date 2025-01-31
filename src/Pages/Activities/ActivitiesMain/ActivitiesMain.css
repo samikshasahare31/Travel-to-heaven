@@ -1,0 +1,238 @@
+:root {
+    --smush-placeholder-width: 500px;
+    --smush-placeholder-aspect-ratio: 500 / 500;
+}
+
+.ActivitiesMain {
+    padding: 30px;
+}
+
+.Activities-destination {
+    margin: 1rem;
+    font-size: 1em;
+}
+
+.ActivitiesMain h1 {
+    font-size: 2.5rem;
+    margin: 2rem;
+    margin-left: 1rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.ActivitiesMain h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40%;
+    height: 3px;
+    background-color: #32b67a;
+}
+
+.Main-container img {
+    width: 100%;
+    height:300px
+}
+
+.Main-container p {
+    font-size: 1.2em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.Activitiescard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    /* Ensure spacing between cards */
+    margin-top: 20px;
+}
+
+.Activitiescard h2 {
+    text-align: center;
+    align-items: center;
+}
+
+.riverraft {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Activitiescard p {
+    font-size: 1em;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.riverraftingcard {
+    align-items: center;
+    width: calc(33.33% - 20px);
+
+    margin-bottom: 20px;
+}
+
+.riverraftingcard-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.riverraftingcard-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.riverraftingcard-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(82, 143, 82, 0);
+    z-index: 2;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.riverraftingcard-image:hover::before {
+    background-color: #32b67a;
+    opacity: 0.7;
+}
+
+.riverraftingcard:hover img {
+    transform: scale(1.2);
+}
+
+.view-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 3;
+}
+
+.riverraftingcard-image:hover .view-button {
+    opacity: 1;
+    visibility: visible;
+}
+
+.riverraft h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+}
+
+.riverraft p {
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .ActivitiesMain {
+        padding: 20px;
+    }
+
+    .Activitiescard {
+        justify-content: flex-start;
+        /* Align cards to the start */
+    }
+
+    .riverraftingcard {
+        width: calc(50% - 20px);
+
+        /* 2 cards per row */
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+
+    .ActivitiesMain h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Activitiescard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .riverraftingcard {
+        width: 100%;
+        margin-top: 10px;
+
+    }
+
+    .ActivitiesMain h1 {
+        font-size: 1.6rem;
+    }
+
+    .riverraft h2 {
+        font-size: 1.4em;
+        margin-top: 15px;
+    }
+
+    .riverraft p {
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+
+    .Main-container p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .ActivitiesMain {
+        padding: 15px;
+    }
+
+    .ActivitiesMain h1 {
+        font-size: 1.5em;
+    }
+
+    .riverraftingcard {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .Main-container p,
+    .riverraft p {
+        font-size: 0.8em;
+    }
+
+    .riverraft p {
+        margin-top: 19px;
+        font-weight: 2em !important;
+
+    }
+
+    .view-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

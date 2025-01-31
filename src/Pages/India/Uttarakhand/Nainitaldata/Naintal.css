@@ -1,0 +1,136 @@
+.nani{
+
+  padding: 0 10px 0 20px;
+
+
+  
+  }
+  
+  .nani-heading{
+    margin-top: 2%;
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+   
+  }
+  .nani-heading::after {
+    content: "";
+    padding: 2px;
+    width: 3%;
+    display: flex;
+    background-color: #32b67a;
+  }
+  .nani-content{
+     font-size: 16px;
+     color: #666666;
+     width: 97%;
+     text-align: justify;
+     margin-bottom: 4%;
+  }
+.nani-content p{
+  padding-right: 20px;
+    padding-left: 30px;
+}
+
+
+.friAndFam {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.friAndFam h2 {
+  background-color: #f4f4f4;
+  display: inline-block;
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding: 0 30px;
+  font-weight: 500;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.friAndFam::after,
+.friAndFam::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+
+.friAndFam::after {
+  content: "";
+  top: 45%;
+}
+
+.friAndFam::before {
+  content: "";
+  top: 55%;
+}
+
+.naniCardsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:flex-start  ;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  
+
+  .friAndFam {
+      font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+ 
+
+  .friAndFam {
+      font-size: 32px;
+  }
+
+  .naniCardsContainer {
+      gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ 
+
+  .friAndFam {
+      font-size: 28px;
+  }
+
+  .friAndFam h2 {
+      padding: 0 20px;
+  }
+
+  .naniCardsContainer {
+      justify-content: center;
+      margin: -5px;
+      /* padding:0 0 0 10px; */
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+
+  .friAndFam {
+      font-size: 24px;
+  }
+
+  .friAndFam h2 {
+      padding: 0 15px;
+  }
+}  
+

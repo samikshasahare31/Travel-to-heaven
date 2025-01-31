@@ -1,0 +1,161 @@
+.dubaiIntro {
+  padding: 20px 40px;
+}
+.dubaiIntro > p {
+  color: black;
+  font-size: 1.1rem;
+}
+.dubaiIntro h1 {
+  font-size: 2.5rem;
+}
+.dubaiIntro h1::after {
+  content: "";
+  padding: 2px;
+  width: 10%;
+  display: flex;
+  background-color: #32b67a;
+}
+.dubaiInfo {
+  margin-top: 30px;
+}
+.dubaiInfo p {
+  color: #7c7c8b;
+  font-size: 1rem;
+}
+.friAndFam {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+.friAndFam h2 {
+  background-color: #f4f4f4;
+  display: inline-block;
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding: 0 30px;
+  font-weight: 500;
+  z-index: 1;
+  font-size: 2rem;
+}
+.friAndFam::after,
+.friAndFam::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+.friAndFam::after {
+  content: "";
+  top: 45%;
+}
+.friAndFam::before {
+  content: "";
+  top: 55%;
+}
+.dubaiCardsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .dubaiIntro {
+    padding: 18px 35px;
+  }
+  .dubaiIntro h1 {
+    font-size: 2.3rem;
+  }
+  .friAndFam {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dubaiIntro {
+    padding: 16px 30px;
+  }
+  .dubaiIntro h1 {
+    font-size: 2.1rem;
+  }
+  .friAndFam {
+    font-size: 32px;
+  }
+  .dubaiCardsContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .dubaiCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dubaiIntro {
+    padding: 14px 25px;
+  }
+  .dubaiIntro h1 {
+    font-size: 1.9rem;
+  }
+  .friAndFam {
+    font-size: 28px;
+  }
+  .friAndFam h2 {
+    padding: 0 25px;
+  }
+  .dubaiCardsContainer {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dubaiIntro {
+    padding: 12px 20px;
+  }
+  .dubaiIntro h1 {
+    font-size: 1.7rem;
+  }
+  .dubaiIntro h1::after {
+    width: 15%;
+  }
+  .friAndFam {
+    font-size: 24px;
+  }
+  .friAndFam h2 {
+    padding: 0 20px;
+  }
+  .dubaiCardsContainer {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dubaiIntro {
+    padding: 10px 15px;
+  }
+  .dubaiIntro h1 {
+    font-size: 1.5rem;
+  }
+  .friAndFam {
+    font-size: 22px;
+  }
+  .friAndFam h2 {
+    padding: 0 15px;
+  }
+  .dubaiCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 15px;
+  }
+}

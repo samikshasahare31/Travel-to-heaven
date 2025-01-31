@@ -1,0 +1,164 @@
+.malaysiaIntro {
+  padding: 20px 40px;
+}
+.malaysiaIntro {
+  padding: 20px 40px;
+}
+.malaysiaIntro > p {
+  color: black;
+  font-size: 1.1rem;
+}
+.malaysiaIntro h1 {
+  font-size: 2.5rem;
+}
+.malaysiaIntro h1::after {
+  content: "";
+  padding: 2px;
+  width: 10%;
+  display: flex;
+  background-color: #32b67a;
+}
+.malaysiaInfo {
+  margin-top: 30px;
+}
+.malaysiaInfo p {
+  color: #7c7c8b;
+}
+.friAndFam {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.friAndFam h2 {
+  background-color: #f4f4f4;
+  display: inline-block;
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding: 0 30px;
+  font-weight: 600;
+  z-index: 1;
+  font-size: 2rem;
+}
+.friAndFam::after,
+.friAndFam::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+.friAndFam::after {
+  content: "";
+  top: 45%;
+}
+.friAndFam::before {
+  content: "";
+  top: 55%;
+}
+.malaysiaCardsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+/*  */
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .malaysiaIntro {
+    padding: 18px 35px;
+  }
+  .malaysiaIntro h1 {
+    font-size: 2.3rem;
+  }
+  .friAndFam {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .malaysiaIntro {
+    padding: 16px 30px;
+  }
+  .malaysiaIntro h1 {
+    font-size: 2.1rem;
+  }
+  .friAndFam {
+    font-size: 32px;
+  }
+  .malaysiaCardsContainer {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .malaysiaIntro {
+    padding: 14px 25px;
+  }
+  .malaysiaIntro h1 {
+    font-size: 1.9rem;
+  }
+  .friAndFam {
+    font-size: 28px;
+  }
+  .friAndFam h2 {
+    padding: 0 25px;
+  }
+  .malaysiaCardsContainer {
+    gap: 20px;
+  }
+  .singaporeCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .malaysiaIntro {
+    padding: 12px 20px;
+  }
+  .malaysiaIntro h1 {
+    font-size: 1.7rem;
+  }
+  .malaysiaIntro h1::after {
+    width: 15%;
+  }
+  .friAndFam {
+    font-size: 24px;
+  }
+  .friAndFam h2 {
+    padding: 0 20px;
+  }
+  .malaysiaCardsContainer {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .malaysiaIntro {
+    padding: 10px 15px;
+  }
+  .malaysiaIntro h1 {
+    font-size: 1.5rem;
+  }
+  .friAndFam {
+    font-size: 22px;
+  }
+  .friAndFam h2 {
+    padding: 0 15px;
+  }
+  .malaysiaCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 15px;
+  }
+}

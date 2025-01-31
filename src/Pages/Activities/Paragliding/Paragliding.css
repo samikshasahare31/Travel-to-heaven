@@ -1,0 +1,152 @@
+/* Base Styles */
+.paragliding-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.paragliding-container h1 {
+  font-size: 2.5rem;
+  margin: 2rem;
+  margin-left: 1rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.paragliding-container h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 40%;
+  height: 3px; 
+  background-color: #32b67a;
+}
+
+.paragliding-destination{
+  margin: 1rem;
+}
+
+.paragliding-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-evenly;
+  margin: 30px auto;
+  padding-left: 0;
+}
+
+.paragliding-cards > *:nth-last-child(-n+1) {
+  margin-right: 67%;
+  margin-left: 0; 
+}
+
+.title {
+  margin: 20px;
+  font-size: 1.4em;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .paragliding-container h1 {
+    font-size: 2rem;
+    margin: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+  .paragliding-card {
+    width: 45%;
+  }
+
+  .paragliding-cards {
+    gap: 30px;
+  }
+
+  .paragliding-cards > *:nth-last-child(-n + 1) {
+    margin-right: 0;
+    margin-left: 0; 
+  }
+}
+
+@media (max-width: 768px) {
+  .paragliding-container h1 {
+    font-size: 1.8rem;
+    margin: 1rem;
+  }
+
+  .paragliding-card {
+    width: 100%;
+  }
+
+  .paragliding-cards {
+    gap: 20px;
+  }
+
+  .paragliding-card:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 30px 60px 20px rgba(0, 0, 0, 0.7);
+    transform: translateY(-10px) scale(1.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .paragliding-cards > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin: 0;
+  }
+
+  .price-section {
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 1.1em;
+  }
+
+  .card-details p {
+    font-size: 0.8rem;
+  }
+
+  .view-details-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .paragliding-container {
+    padding: 10px;
+  }
+
+  .paragliding-container h1 {
+    font-size: 1.8rem;
+    margin: 1rem;
+    margin-left: 1.5rem;
+  }
+
+  .paragliding-cards {
+    gap: 20px;
+  }
+
+  .paragliding-cards > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin: 0;
+  }
+
+  .price-section {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1em;
+    margin: 10px;
+  }
+
+  .card-details {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,523 @@
+.andaman-details-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 20px 50px;
+  scroll-behavior: smooth;
+}
+
+.andamn-detail-right {
+  width: 60%;
+}
+
+.andamn-detail-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.andamn-detail-title {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.andamn-detail-title h1 {
+  font-size: 2rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.andamn-detail-title h1::after {
+  content: "";
+  display: flex;
+  padding: 2px;
+  width: 50%;
+  background-color: #32b67a;
+}
+
+.andamn-no-days {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px rgb(211, 210, 210);
+}
+
+.andamn-details-images-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.andamn-details-card-image {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Arrow buttons */
+.andamn-details-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 2em;
+  border-radius: 50%;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.andamn-details-images-slider:hover .andamn-details-arrow {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Positioning for left and right arrows */
+.andamn-details-arrow.left {
+  left: 10px;
+  padding: 8px 16px;
+}
+
+.andamn-details-arrow.right {
+  right: 10px;
+  padding: 8px 16px;
+}
+
+.andamn-detail-description {
+  font-family: sans-serif;
+  margin-top: -32px;
+}
+
+.andamn-detail-description p {
+  font-size: 1.3rem;
+}
+
+.andamn-info-details {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+}
+
+.andamn-detail-nav-sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  margin-top: 20px;
+  width: auto;
+  max-width: 100%;
+  justify-content: space-around;
+  height: 10vh;
+  display: flex !important;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.andamn-detail-nav-sticky ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+  height: 100%;
+}
+
+.andamn-detail-nav-sticky ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.andamn-detail-nav-sticky ul li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -2px;
+  bottom: -2px;
+  width: 1px;
+  background-color: black;
+}
+
+.andamn-detail-nav-sticky ul li:last-child::after {
+  display: none;
+}
+
+.andamn-detail-overview {
+  margin-top: 50px;
+}
+
+.andamn-detail-overview p {
+  font-size: 1.3rem;
+}
+
+.andamn-detail-overview h1,
+.andamn-detail-itinerary h1,
+.andamn-inclusions-container h1,
+.andamn-detail-expect h1,
+.andamn-hotel-container,
+.andamn-optional-container {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.andamn-detail-itinerary {
+  margin-top: 50px;
+}
+
+.andamn-qna-container {
+  margin-top: 50px;
+}
+
+.andamn-question h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.andamn-answer p {
+  font-size: 1rem;
+}
+
+.andamn-exclusion-container,
+.andamn-inclusions-container {
+  margin-top: 50px;
+}
+
+.andamn-inclusion {
+  margin-top: 10px;
+}
+.andamn-expect p {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.andamn-inclusion p,
+.andamn-exclusion p {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.andaman-detail-price-container {
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+.andamn-detail-discount {
+  margin-bottom: 20px;
+}
+
+.andamn-detail-discount h1 {
+  padding: 5px 10px;
+  display: inline;
+  background-color: #fceaea;
+  color: #e75040;
+  font-weight: 500;
+}
+
+.andamn-originalPrice span {
+  display: inline-flex;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.andamn-originalPrice span del {
+  color: #919191;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.andamn-finalPrice h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.andamn-finalPrice span {
+  color: #919191;
+}
+
+.andamn-availableBtn {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #32b67a;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  height: 50px;
+  border-radius: 5px;
+}
+.andamn-tripAdvisor-container {
+  width: 250px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid green;
+}
+.andamn-tripAdvisor-img {
+  width: 100px;
+}
+.andamn-tripAdvisor-content h2 {
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 10px;
+  color: black;
+}
+
+/* Accordation Itinerary Css */
+
+.andamn-qna-container {
+  margin-bottom: 10px;
+}
+
+.andamn-accordion-header {
+  cursor: pointer;
+  background: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.andamn-accordion-content {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.andamn-accordion-content p {
+  font-size: 1.3rem;
+  padding: 15px;
+}
+
+@media (max-width: 1024px) {
+  .andaman-detail-price-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    z-index: 1000;
+    border-top: 1px solid #ddd;
+    font-size: 0.8em;
+    border-radius: 0;
+  }
+
+  .andaman-details-container {
+    padding-bottom: 80px;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .andamn-detail-left,
+  .andamn-detail-right {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .andamn-detail-title h1 {
+    font-size: 1.8em;
+  }
+
+  .andamn-detail-description p,
+  .andamn-detail-overview p {
+    font-size: 1.2em;
+  }
+
+  .andamn-finalPrice h1 {
+    font-size: 1.4rem;
+  }
+
+  .andamn-details-images-slider {
+    height: 300px;
+  }
+
+  .andamn-originalPrice span {
+    font-size: 0.9em;
+  }
+
+  .andamn-detail-discount {
+    margin: 10px;
+  }
+
+  .andamn-detail-nav-sticky {
+    font-size: 1rem;
+    margin-top: 8%;
+    width: 100%;
+  }
+
+  .andamn-detail-nav-sticky ul {
+    flex-direction: row;
+  }
+
+  .andamn-detail-nav-sticky ul li {
+    padding: 5px;
+    font-size: 1.2em;
+  }
+
+  .andamn-availableBtn {
+    font-size: 0.9em;
+    padding: 10px;
+    margin-top: 0;
+    margin-left: 8px;
+  }
+
+  .andamn-tripAdvisor-heading {
+    font-size: 1em;
+  }
+
+  .andamn-tripAdvisor-content h2 {
+    margin-top: 5%;
+  }
+
+  .andamn-tripAdvisor-container {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid green;
+    text-align: center;
+  }
+  .andamn-tripAdvisor-container p {
+    font-size: 1.2em;
+    margin-top: 5%;
+  }
+  .andamn-tripAdvisor-img img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .andamn-tripAdvisor-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .andamn-tripAdvisor-content .text-green-500 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 8%;
+  }
+
+  .andamn-availableBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #32b67a;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    height: 50px;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .andamn-detail-nav-sticky {
+    font-size: 0.8rem;
+  }
+
+  .andamn-detail-price-container {
+    font-size: 0.7rem;
+  }
+
+  .andamn-detail-title h1 {
+    font-size: 1.5em;
+  }
+
+  .andamn-detail-description p,
+  .andamn-detail-overview p {
+    font-size: 0.9em;
+  }
+  .andamn-tripAdvisor-img img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .andamn-detail-nav-sticky {
+    font-size: 0.45rem;
+    padding: 8px;
+  }
+
+  .andamn-info-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .andamn-detail-price-container {
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 8px;
+  }
+
+  .andamn-detail-title h1 {
+    font-size: 1.3em;
+  }
+
+  .andamn-detail-description p,
+  .andamn-detail-overview p {
+    font-size: 0.9em;
+  }
+  .andamn-tripAdvisor-img img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .andamn-inclusion {
+    font-size: 0.9em;
+  }
+}

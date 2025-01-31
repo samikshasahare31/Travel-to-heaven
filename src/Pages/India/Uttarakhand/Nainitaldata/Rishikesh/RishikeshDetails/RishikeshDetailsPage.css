@@ -1,0 +1,443 @@
+.Rishikesh-details-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 20px 50px;
+  scroll-behavior: smooth;
+}
+
+.Rishikesh-detail-right {
+  width: 60%;
+}
+
+.Rishikesh-detail-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.Rishikesh-detail-title {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Rishikesh-detail-title h1 {
+  font-size: 2rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.Rishikesh-detail-title h1::after {
+  content: "";
+  display: flex;
+  padding: 2px;
+  width: 50%;
+  background-color: #32b67a;
+}
+
+.Rishikesh-no-days {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px rgb(211, 210, 210);
+}
+
+.Rishikesh-details-images-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.Rishikesh-details-card-image {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Rishikesh-details-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 2em;
+  border-radius: 50%;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.Rishikesh-details-images-slider:hover .Rishikesh-details-arrow {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Rishikesh-details-arrow.left {
+  left: 10px;
+  padding: 8px 16px;
+}
+
+.Rishikesh-details-arrow.right {
+  right: 10px;
+  padding: 8px 16px;
+}
+
+.Rishikesh-detail-description {
+  margin-top: 50px;
+}
+
+.Rishikesh-detail-description p {
+  font-size: 1.3em;
+}
+
+.Rishikesh-info-details {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+}
+
+.Rishikesh-detail-nav-sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.8em;
+  margin-top: 20px;
+  width: auto;
+  max-width: 100%;
+  justify-content: space-around;
+  height: 10vh;
+  display: flex !important;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.Rishikesh-detail-nav-sticky ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+  height: 100%;
+}
+
+.Rishikesh-detail-nav-sticky ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.Rishikesh-detail-nav-sticky ul li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -2px;
+  bottom: -2px;
+  width: 1px;
+  background-color: black;
+}
+
+.Rishikesh-detail-nav-sticky ul li:last-child::after {
+  display: none;
+}
+
+.Rishikesh-detail-overview {
+  margin-top: 50px;
+}
+
+.Rishikesh-detail-overview p {
+  font-size: 1.3em;
+}
+
+.Rishikesh-detail-overview h1,
+.Rishikesh-detail-itinerary h1,
+.Rishikesh-inclusions-container h1 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.Rishikesh-detail-itinerary {
+  margin-top: 50px;
+}
+
+.Rishikesh-qna-container {
+  margin-top: 50px;
+}
+
+.Rishikesh-question h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.Rishikesh-answer p {
+  font-size: 1.3em;
+}
+
+.Rishikesh-exclusion-container,
+.Rishikesh-inclusions-container {
+  margin-top: 50px;
+}
+
+.Rishikesh-inclusion {
+  margin-top: 10px;
+}
+
+.Rishikesh-inclusion p {
+  margin-top: 1.5rem;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Rishikesh-detail-price-container {
+  width: 80%;
+  padding: 50px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+.Rishikesh-detail-discount {
+  margin-bottom: 20px;
+}
+
+.Rishikesh-detail-discount h1 {
+  padding: 5px 10px;
+  display: inline;
+  background-color: #fceaea;
+  color: #e75040;
+  font-weight: 500;
+}
+
+.Rishikesh-originalPrice span {
+  display: inline-flex;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.Rishikesh-originalPrice span del {
+  color: #919191;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.Rishikesh-finalPrice h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.Rishikesh-finalPrice span {
+  color: #919191;
+}
+
+.Rishikesh-availableBtn {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #32b67a;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.Rishikesh-tripAdvisor-container {
+  width: 250px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid green;
+}
+
+.Rishikesh-tripAdvisor-img {
+  width: 100px;
+}
+
+.Rishikesh-tripAdvisor-content h2 {
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 10px;
+  color: black;
+}
+
+/* Accordion Itinerary Css */
+.Rishikesh-qna-container {
+  margin: 10px;
+}
+
+.Rishikesh-accordion-header {
+  cursor: pointer;
+  background: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Rishikesh-accordion-content {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.Rishikesh-accordion-content p {
+  font-size: 1.3em;
+}
+
+/* Hotel Css */
+
+.Rishikesh-hotels-container {
+  margin-top: 3rem;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Rishikesh-hotels-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.hotels-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.hotels-table th,
+.hotels-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.3em;
+}
+
+.hotels-table th {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+.hotels-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.hotels-table td {
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .Rishikesh-details-container {
+    height: auto;
+  }
+
+  .Rishikesh-availableBtn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Rishikesh-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+    width: 100%;
+  }
+
+  .Rishikesh-detail-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .Rishikesh-detail-price-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 111;
+    box-shadow: -2px 0 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    padding: 24px 24px 16px;
+    background-color: #fff;
+  }
+
+  .Rishikesh-detail-left {
+    width: 90%;
+    padding-left: 0px;
+  }
+
+  .Rishikesh-detail-left .review h2 {
+    font-size: 1.5rem;
+  }
+
+  .Rishikesh-tripAdvisor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .Rishikesh-detail-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .Rishikesh-info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .Rishikesh-detail-nav-sticky {
+    background-color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    margin-top: 20px;
+    justify-content: space-around;
+    max-width: 100%;
+    display: flex !important;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+}

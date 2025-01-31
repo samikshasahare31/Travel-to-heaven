@@ -1,0 +1,443 @@
+.ladakh-details-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 20px 50px;
+  scroll-behavior: smooth;
+}
+
+.ladakh-detail-right {
+  width: 60%;
+}
+
+.ladakh-detail-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.ladakh-detail-title {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ladakh-detail-title h1 {
+  font-size: 2rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.ladakh-detail-title h1::after {
+  content: "";
+  display: flex;
+  padding: 2px;
+  width: 50%;
+  background-color: #32b67a;
+}
+
+.ladakh-no-days {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px rgb(211, 210, 210);
+}
+
+.ladakh-details-images-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.ladakh-details-card-image {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ladakh-details-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 2em;
+  border-radius: 50%;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.ladakh-details-images-slider:hover .ladakh-details-arrow {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ladakh-details-arrow.left {
+  left: 10px;
+  padding: 8px 16px;
+}
+
+.ladakh-details-arrow.right {
+  right: 10px;
+  padding: 8px 16px;
+}
+
+.ladakh-detail-description {
+  margin-top: 50px;
+}
+
+.ladakh-detail-description p {
+  font-size: 1.3em;
+}
+
+.ladakh-info-details {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+}
+
+.ladakh-detail-nav-sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.8em;
+  margin-top: 20px;
+  width: auto;
+  max-width: 100%;
+  justify-content: space-around;
+  height: 10vh;
+  display: flex !important;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.ladakh-detail-nav-sticky ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+  height: 100%;
+}
+
+.ladakh-detail-nav-sticky ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.ladakh-detail-nav-sticky ul li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -2px;
+  bottom: -2px;
+  width: 1px;
+  background-color: black;
+}
+
+.ladakh-detail-nav-sticky ul li:last-child::after {
+  display: none;
+}
+
+.ladakh-detail-overview {
+  margin-top: 50px;
+}
+
+.ladakh-detail-overview p {
+  font-size: 1.3em;
+}
+
+.ladakh-detail-overview h1,
+.ladakh-detail-itinerary h1,
+.ladakh-inclusions-container h1 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.ladakh-detail-itinerary {
+  margin-top: 50px;
+}
+
+.ladakh-qna-container {
+  margin-top: 50px;
+}
+
+.ladakh-question h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.ladakh-answer p {
+  font-size: 1.3em;
+}
+
+.ladakh-exclusion-container,
+.ladakh-inclusions-container {
+  margin-top: 50px;
+}
+
+.ladakh-inclusion {
+  margin-top: 10px;
+}
+
+.ladakh-inclusion p {
+  margin-top: 1.5rem;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ladakh-detail-price-container {
+  width: 80%;
+  padding: 50px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+.ladakh-detail-discount {
+  margin-bottom: 20px;
+}
+
+.ladakh-detail-discount h1 {
+  padding: 5px 10px;
+  display: inline;
+  background-color: #fceaea;
+  color: #e75040;
+  font-weight: 500;
+}
+
+.ladakh-originalPrice span {
+  display: inline-flex;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.ladakh-originalPrice span del {
+  color: #919191;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.ladakh-finalPrice h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.ladakh-finalPrice span {
+  color: #919191;
+}
+
+.ladakh-availableBtn {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #32b67a;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.ladakh-tripAdvisor-container {
+  width: 250px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid green;
+}
+
+.ladakh-tripAdvisor-img {
+  width: 100px;
+}
+
+.ladakh-tripAdvisor-content h2 {
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 10px;
+  color: black;
+}
+
+/* Accordion Itinerary Css */
+.ladakh-qna-container {
+  margin: 10px;
+}
+
+.ladakh-accordion-header {
+  cursor: pointer;
+  background: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ladakh-accordion-content {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.ladakh-accordion-content p {
+  font-size: 1.3em;
+}
+
+/* Hotel Css */
+
+.ladakh-hotels-container {
+  margin-top: 3rem;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ladakh-hotels-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.hotels-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.hotels-table th,
+.hotels-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.3em;
+}
+
+.hotels-table th {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+.hotels-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.hotels-table td {
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .ladakh-details-container {
+    height: auto;
+  }
+
+  .ladakh-availableBtn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ladakh-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+    width: 100%;
+  }
+
+  .ladakh-detail-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .ladakh-detail-price-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 111;
+    box-shadow: -2px 0 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    padding: 24px 24px 16px;
+    background-color: #fff;
+  }
+
+  .ladakh-detail-left {
+    width: 90%;
+    padding-left: 0px;
+  }
+
+  .ladakh-detail-left .review h2 {
+    font-size: 1.5rem;
+  }
+
+  .ladakh-tripAdvisor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .ladakh-detail-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .ladakh-info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .ladakh-detail-nav-sticky {
+    background-color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    margin-top: 20px;
+    justify-content: space-around;
+    max-width: 100%;
+    display: flex !important;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+}

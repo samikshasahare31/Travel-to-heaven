@@ -1,0 +1,270 @@
+.custom-container {
+  margin: 0rem 1.875rem;
+}
+
+.custom-heading {
+  font-size: 2.25rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.custom-heading .underline {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 5%;
+  background-color: #32b67a;
+  margin-top: 0.5rem;
+  position: absolute;
+}
+
+.custom-paragraph,
+.custom-paragraph-secondary {
+  margin-top: 0.5rem;
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.custom-section .custom-subheading {
+  font-size: 1.673rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.custom-section .custom-list {
+  margin-left: 16px;
+  list-style-type: disc;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.custom-section .custom-list-item {
+  color: #38a169;
+}
+
+.custom-highlight {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.custom-divider {
+  margin: 0 0.5rem;
+  color: #7f8c8d;
+  font-weight: normal;
+}
+
+.custom-item-content {
+  margin: 0rem 0.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.custom-place-name {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.custom-item-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.custom-details-list {
+  list-style-type: disc;
+  margin: 0rem 1rem;
+}
+
+.custom-details-item {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.custom-location {
+  font-weight: 400;
+}
+
+.custom-highlight-item {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.custom-highlight-item u {
+  width: 1.25rem;
+  color: #4b5563;
+}
+
+.custom-item-content {
+  margin: 0 0.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.custom-attraction {
+  font-weight: 600;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.custom-details-list {
+  margin: 0rem 1rem;
+}
+
+.custom-visit-time {
+  margin-top: 1rem;
+}
+
+.custom-visitTime-name {
+  font-size: 0.987rem;
+  font-weight: 600;
+}
+
+.custom-subheading-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.custom-list-mountains {
+  margin-left: 16px;
+  list-style-type: disc;
+  color: #4b5563;
+  gap: 8px;
+}
+
+.custom-highlight-item-ladakh {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4a5568;
+  padding: 2rem 0;
+}
+
+.custom-list-leh {
+  margin-left: 16px;
+  list-style-type: disc;
+  color: #4b5563;
+  gap: 8px;
+}
+
+.custom-divider-container {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.custom-divider-container h2 {
+  background-color: #f4f4f4;
+  display: inline-block;
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding: 0 30px;
+  font-weight: 600;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.custom-divider-container::after,
+.custom-divider-container::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+
+.custom-divider-container::after {
+  content: "";
+  top: 45%;
+}
+.custom-divider-container::before {
+  content: "";
+  top: 55%;
+}
+
+.custom-flex-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+.custom-flex-container > *:nth-last-child(-n + 1) {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+.custom-flex-other-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .custom-flex-other-container > *:nth-last-child(-n + 1) {
+  margin-right: auto;
+  margin-left: 0px;
+} */
+
+@media (max-width: 2560px) {
+  .custom-flex-container {
+    justify-content: space-between;
+  }
+  .custom-flex-container > *:nth-last-child(-n + 1) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-flex-container {
+    justify-content: space-evenly;
+  }
+
+  .custom-flex-other-container {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-container {
+    margin: 0rem 1.275rem;
+  }
+  .custom-heading {
+    font-size: 1.8rem;
+  }
+
+  .custom-paragraph,
+  .custom-paragraph-secondary {
+    font-size: 1rem;
+  }
+
+  .custom-highlight-item {
+    font-size: 1.1rem;
+  }
+
+  .custom-divider-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .custom-flex-other-container > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,40 @@
+/* Reset body styles for a clean layout */
+body {
+    margin: 0;
+    overflow: scroll;
+  }
+  
+  /* Container for the video and content */
+  .video-background-container {
+    margin: 10px;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden; /* Ensures no scrollbars appear */
+  }
+  
+  /* Video styling to make it responsive */
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes the video span the full width */
+    height: 100%; /* Ensures the video spans the full height */
+    object-fit: cover; /* Ensures the video fills the container, cropping if necessary */
+    z-index: -1; /* Places the video behind the content */
+    pointer-events: none; /* Prevents user interaction with the video */
+  }
+  
+  /* Content to overlay on top of the video */
+  .content {
+    position: relative;
+    z-index: 1; /* Places content above the video */
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px; /* Adds padding for smaller screens */
+    box-sizing: border-box;
+  }
+  

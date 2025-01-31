@@ -1,0 +1,159 @@
+.maldivesIntro {
+  padding: 20px 40px;
+}
+.maldivesIntro > p {
+  color: black;
+  font-size: 1.1rem;
+}
+.maldivesIntro h1 {
+  font-size: 2.5rem;
+}
+.maldivesIntro h1::after {
+  content: "";
+  padding: 2px;
+  width: 10%;
+  display: flex;
+  background-color: #32b67a;
+}
+.maldivesInfo {
+  margin-top: 30px;
+}
+.maldivesInfo h2 {
+  font-weight: 600;
+}
+.maldivesInfo p {
+  font-size: 1rem;
+  color: #7c7c8b;
+}
+
+.maldivesInfo p span {
+  color: #4d4d50;
+  font-weight: bold;
+}
+.friAndFam {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+.friAndFam h2 {
+  background-color: #f4f4f4;
+  display: inline-block;
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding: 0 30px;
+  font-weight: 500;
+  z-index: 1;
+  font-size: 2rem;
+}
+.friAndFam::after,
+.friAndFam::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+.friAndFam::after {
+  content: "";
+  top: 45%;
+}
+.friAndFam::before {
+  content: "";
+  top: 55%;
+}
+.maldivesCardsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .maldivesIntro {
+    padding: 15px 30px;
+  }
+
+  .maldivesIntro h1 {
+    font-size: 2.2rem;
+  }
+
+  .friAndFam {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .maldivesIntro {
+    padding: 10px 20px;
+  }
+
+  .maldivesIntro h1 {
+    font-size: 2rem;
+  }
+
+  .friAndFam {
+    font-size: 32px;
+  }
+
+  .maldivesCardsContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .maldivesCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .maldivesIntro h1 {
+    font-size: 1.8rem;
+  }
+
+  .friAndFam {
+    font-size: 28px;
+  }
+
+  .friAndFam h2 {
+    padding: 0 20px;
+  }
+
+  .maldivesCardsContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .maldivesIntro {
+    padding: 10px;
+  }
+
+  .maldivesIntro h1 {
+    font-size: 1.5rem;
+  }
+
+  .maldivesIntro h1::after {
+    width: 15%;
+  }
+
+  .friAndFam {
+    font-size: 24px;
+  }
+
+  .friAndFam h2 {
+    padding: 0 15px;
+  }
+  .maldivesCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 15px;
+  }
+}

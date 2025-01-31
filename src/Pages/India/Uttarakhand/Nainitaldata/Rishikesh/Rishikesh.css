@@ -1,0 +1,207 @@
+.rishikesh {
+  padding: 20px 40px;
+}
+
+.rishikesh-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+
+.rishikesh-heading::after {
+  content: "";
+  padding: 2px;
+  width: 5%;
+  display: flex;
+  background-color: #32b67a;
+}
+
+.rishikesh-content {
+  font-size: 16px;
+  color: #666666;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.things-to-do {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.things-to-do li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.things-to-do .highlight {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Sub-section styles */
+.camping, .friendtour, .hiking, .rafting, .sports {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.camping h2, .friendtour h2, .hiking h2, .rafting h2, .sports h2 {
+  background-color: #fafafa;
+  display: inline-block;
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding: 0 30px;
+  font-weight: 500;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.camping::after, .camping::before,
+.friendtour::after, .friendtour::before,
+.hiking::after, .hiking::before,
+.rafting::after, .rafting::before,
+.sports::after, .sports::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(144, 144, 144);
+}
+
+.hiking-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px; /* Space between cards */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+}
+
+/* Individual card styles */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 200px; /* Ensures cards have a minimum width */
+  max-width: 300px; /* Limits the maximum width of the cards */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: space-around;
+    min-width: 200px; /* Ensures cards have a minimum width */
+    max-width: 300px;
+    padding: 15px 0 15px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-container {
+    display: 100%;
+    min-width: 200px; /* Ensures cards have a minimum width */
+    max-width: 300px;
+    padding: 50px 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-container {
+    justify-content: space-around;
+    display: contents;
+    font-display: 120%;
+    min-width: 200px; /* Ensures cards have a minimum width */
+    max-width: 1000px;
+    padding: 100px 0 0 0;
+  }
+}
+
+.camping-div, .friend-div, .rafting-div, .sports-div {
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.camping-div, .friend-div, .rafting-div, .sports-div {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: space-around;
+    min-width: 200px; /* Ensures cards have a minimum width */
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-container {
+    display: 100%;
+    min-width: 200px; /* Ensures cards have a minimum width */
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-container {
+    justify-content: space-around;
+    display: contents;
+    font-display: 120%;
+    justify-content: center;
+  }
+}
+
+.camping::after, .friendtour::after, .hiking::after, .rafting::after, .sports::after {
+  top: 45%;
+}
+
+.camping::before, .friendtour::before, .hiking::before, .rafting::before, .sports::before {
+  top: 50%;
+}
+
+/* Responsive section styles */
+@media (max-width: 768px) {
+  .camping, .friendtour, .hiking, .rafting, .sports {
+    font-size: 30px;
+  }
+
+  .camping h2, .friendtour h2, .hiking h2, .rafting h2, .sports h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .camping, .friendtour, .hiking, .rafting, .sports {
+    font-size: 25px;
+  }
+
+  .camping h2, .friendtour h2, .hiking h2, .rafting h2, .sports h2 {
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .camping-div {
+    display: flex;
+  }
+}

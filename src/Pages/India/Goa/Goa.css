@@ -1,0 +1,284 @@
+.goa {
+  padding: 20px 40px;
+}
+.goa-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.goa-heading::after {
+  content: "";
+  padding: 2px;
+  width: 3%;
+  display: flex;
+  background-color: #32b67a;
+}
+.goa-content {
+  font-size: 16px;
+  color: #666666;
+  width: 97%;
+  margin-bottom: 4%;
+  text-align: justify;
+}
+
+.Friends-div .Friends-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 5%;
+  font-size: 176%;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.Friends-div .Friends-title::before,
+.Friends-div .Friends-title::after {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 10px;
+  height: 6px;
+}
+
+.Friends-div .Friends-title::before {
+  border-top: 2px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.Friends-div .Friends-title::after {
+  border-top: 2px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.Friends-div .Friends-title span {
+  display: inline-block;
+}
+
+.friendfamily-heading {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.other-div .other-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 3%;
+  font-size: 176%;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.other-div .other-title::before,
+.other-div .other-title::after {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 10px;
+  height: 6px;
+}
+
+.other-div .other-title::before {
+  border-top: 2px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.other-div .other-title::after {
+  border-top: 2px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.other-div .other-title span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.otherstrip-heading {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.othertrips-content {
+  color: #666666;
+}
+
+.other-div {
+  margin-top: 16px;
+}
+
+/* card */
+
+.GoaContainer1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 65px;
+  margin-top: 30px;
+}
+.GoaContainer2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 65px;
+  margin-top: 30px;
+}
+
+@media (max-width: 317px) {
+  .friendfamily-heading {
+    font-size: 67%;
+  }
+}
+@media screen and (width: 320px) {
+  .goa-heading::after {
+    width: 26%;
+  }
+  .GoaContainer1 {
+    margin-left: -2%;
+  }
+  .GoaContainer2{
+    margin-left: -2%;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .goa {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .goa-heading::after {
+    width: 13%;
+  }
+
+  .goa-content {
+    text-align: justify;
+  }
+
+  .GoaContainer {
+    /* width: 111%; */
+    
+  }
+}
+@media screen and (max-width: 330px) {
+  .GoaContainer1 {
+    /* margin-left: -3%; */
+
+      width: 103%
+  }
+  .GoaContainer2{
+    width: 103%;
+    /* margin-left: -3%; */
+
+  }
+}
+
+@media (max-width:768px){
+  .GoaContainer1{
+    justify-content: space-evenly;
+
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .GoaContainer {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 800px) {
+  .goa {
+    padding: 10px 20px;
+  }
+
+  .GoaContainer1 .GoaContainer2 {
+    padding: 10px !important;
+  }
+
+  .goa-content {
+    text-align: justify;
+  }
+}
+/* @media (max-width: 900px) {
+  .Andaman-tour {
+    padding: 10px 20px;
+  }
+} */
+@media (max-width: 992px) {
+ 
+  .GoaContainer2 {
+    /* display: flex; */
+    justify-content: space-evenly;
+  /* column-gap: 3%; */
+
+}
+}
+@media (max-width: 1179px) and (min-width:1025px ){
+  .GoaContainer2{
+    gap: 40px !important;
+    justify-content: space-evenly;
+  }
+}
+/* @media (max-width: 1139px) {
+  .GoaContainer2{
+    gap:  49px!important;
+
+  }
+} */
+/* @media (max-width: 1160px) {
+  .GoaContainer2{
+    gap: 53px !important;
+
+  }
+} */
+@media (max-width: 1325px){
+  .GoaContainer2{
+    gap: 54px;
+
+  }
+}
+@media (max-width: 1380px){
+  
+  .GoaContainer2{
+    gap: 54px;
+    justify-content: space-evenly;
+   
+  }
+}
+
+@media (max-width: 1600px){
+  
+  .GoaContainer2{
+    gap: 54px;
+    justify-content: space-evenly;
+   
+  }
+}
+@media (max-width: 1800px){
+  
+  .GoaContainer2{
+    /* gap: 54px; */
+    justify-content: space-evenly;
+   
+  }
+}
+@media (max-width: 2100px){
+  
+  .GoaContainer2{
+    /* gap: 54px; */
+    justify-content: space-evenly;
+   
+  }
+}
