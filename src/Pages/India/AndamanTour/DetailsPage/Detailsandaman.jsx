@@ -316,7 +316,7 @@ const Detailsandaman = () => {
                 />
               </div>
               <div className="andamn-tripAdvisor-content">
-                <h2>Ten Travel |</h2>
+                <h2>Travel to Heaven |</h2>
                 <h2>Online Travel</h2>
                 <h2>Agency</h2>
                 <div>
@@ -331,7 +331,7 @@ const Detailsandaman = () => {
                 </div>
                 <div>
                   <span>Trip Advisor Review</span>
-                  <p>"Ten Travel Review"</p>
+                  <p>"Travel to Heaven Review"</p>
                   <p>"very bad experience"</p>
                   <p>"Trip to Bali and Singapore"</p>
                   <p>"Comfortable experince"</p>

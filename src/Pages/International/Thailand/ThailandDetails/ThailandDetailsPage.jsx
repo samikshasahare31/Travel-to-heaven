@@ -344,7 +344,7 @@ const ThailandDetailsPage = () => {
                 />
               </div>
               <div className={styles["tripAdvisor-content"]}>
-                <h2>Ten Travels</h2>
+                <h2>Travel to Heavens</h2>
 
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
@@ -359,7 +359,7 @@ const ThailandDetailsPage = () => {
                 </div>
                 <div>
                   <span>Trip Advisor Review</span>
-                  <p>"Ten Travel Holiday Review"</p>
+                  <p>"Travel to Heaven Holiday Review"</p>
                   <p>"very bad experience"</p>
                   <p>"Trip to Bali and Singapore"</p>
                   <p>"Comfortable experince"</p>

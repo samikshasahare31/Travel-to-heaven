@@ -745,7 +745,7 @@ export const travelPackage = [
         {
           question: "Day 1 : Arrive in Cochin | Sightseeing in Cochin",
           answer: [
-            "When you get to Cochin, meet the TEN TRAVEL agent at the airport, and then make your way to the hotel. Check in at the hotel when you get there. After that, continue your sightseeing in Cochin by going to the Dutch Palace, the Santa Cruz Church, the Jewish synagogue, the Chinese fishing nets, and St. Francis Church. Spend the night at the hotel.",
+            "When you get to Cochin, meet the Travel to Heaven agent at the airport, and then make your way to the hotel. Check in at the hotel when you get there. After that, continue your sightseeing in Cochin by going to the Dutch Palace, the Santa Cruz Church, the Jewish synagogue, the Chinese fishing nets, and St. Francis Church. Spend the night at the hotel.",
           ],
         },
         {

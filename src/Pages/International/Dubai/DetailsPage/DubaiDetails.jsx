@@ -232,7 +232,7 @@ const DubaiDetails = () => {
                 />
               </div>
               <div className="tripAdvisor-content text-center">
-                <h2>Ten Travels</h2>
+                <h2>Travel to Heavens</h2>
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
                   <span className="flex items-center justify-center gap-1 text-green-500">

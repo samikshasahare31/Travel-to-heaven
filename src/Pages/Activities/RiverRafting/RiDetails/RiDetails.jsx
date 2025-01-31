@@ -232,7 +232,7 @@ const RiverRaftingDetails = () => {
             />
           </div>
           <div className="riverrafting-tripAdvisor-content text-center">
-            <h2>Ten Travels</h2>
+            <h2>Travel to Heavens</h2>
 
             <div>
               <p>Trip Advisor Traveler Rating</p>

@@ -330,7 +330,7 @@ const DarjeelingDetailsPage = () => {
                 />
               </div>
               <div className={styles["tripAdvisor-content"]}>
-                <h2>TEN TRAVELS |</h2>
+                <h2>Travel to HeavenS |</h2>
                 <h2>Online Travel</h2>
                 <h2>Agency</h2>
                 <div>
@@ -346,7 +346,7 @@ const DarjeelingDetailsPage = () => {
                 </div>
                 <div>
                   <span>Trip Advisor Review</span>
-                  <p>"Ten Travel Holiday Review"</p>
+                  <p>"Travel to Heaven Holiday Review"</p>
                   <p>"very bad experience"</p>
                   <p>"Trip to Bali and Singapore"</p>
                   <p>"Comfortable experince"</p>

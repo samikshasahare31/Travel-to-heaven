@@ -326,7 +326,7 @@ const DetailsKashmir = () => {
                 />
               </div>
               <div className="Kashmir-tripAdvisor-content">
-                <h2>Ten Travel |</h2>
+                <h2>Travel to Heaven |</h2>
                 <h2>Online Travel</h2>
                 <h2>Agency</h2>
                 <div>
@@ -341,7 +341,7 @@ const DetailsKashmir = () => {
                 </div>
                 <div>
                   <span>Trip Advisor Review</span>
-                  <p>"Ten Travel Review"</p>
+                  <p>"Travel to Heaven Review"</p>
                   <p>"very bad experience"</p>
                   <p>"Trip to Kashmir"</p>
                   <p>"Comfortable experince"</p>

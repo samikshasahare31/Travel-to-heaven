@@ -34,7 +34,7 @@ const AboutUs = () => {
         <p>
         At The Entrepreneurship Network (TEN), we are passionate about transforming ideas into impactful realities. Our mission is to empower aspiring entrepreneurs through our Virtual Incubator Program, a comprehensive initiative that offers accessible resources, expert mentorship, and practical guidance. From idea validation and market research to strategic business planning and funding opportunities, we are dedicated to supporting individuals at every stage of their entrepreneurial journey, bridging the gap between ambition and success.
         </p>
-<p>To further enhance our offerings and diversify our impact, we established TEN Travel, a subsidiary that blends entrepreneurship with travel excellence. Since its inception, TEN Travel has been redefining travel experiences, providing personalized itineraries, theme-based packages, and seamless corporate travel solutions. Together, TEN and TEN Travel create a unique ecosystem where dreams are nurtured—whether through business innovation or unforgettable journeys. </p>
+<p>To further enhance our offerings and diversify our impact, we established Travel to Heaven, a subsidiary that blends entrepreneurship with travel excellence. Since its inception, Travel to Heaven has been redefining travel experiences, providing personalized itineraries, theme-based packages, and seamless corporate travel solutions. Together, TEN and Travel to Heaven create a unique ecosystem where dreams are nurtured—whether through business innovation or unforgettable journeys. </p>
        
        
         <div className='image-grid'>
